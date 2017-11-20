@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Converter</title>
+</head>
+<body>
+	
+</body>
+<script>
+	
+	var number = parseInt(prompt('entrer un chiffre entre 0 et 999.'));
+
+	console.log(number);
+
+	function convert(hundred, decade, unity) {
+		console.log(hundred + ' ' + decade + ' ' + unity);
+
+		switch (decade) {
+		 case 10:
+		    decade = 'dix'
+		    console.log(decade);
+		    break;
+		 case 20:
+		    decade = 'vingt'
+		    console.log(decade);
+		    break;
+		 case 30:
+		    decade = 'trente'
+		    console.log(decade);
+		    break;
+		 case 40:
+		    decade = 'quarante'
+		    console.log(decade);
+		    break;
+		 case 50:
+		    decade = 'cinquante'
+		    console.log(decade);
+		    break;
+		 case 60:
+		    decade = 'sixante'
+		    console.log(decade);
+		    break;
+		 case 70:
+		    decade = 'soixante-dix'
+		    console.log(decade);
+		    break;
+		 case 80:
+		    decade = 'quatre-vingts'
+		    console.log(decade);
+		    break;
+		 case 90:
+		    decade = 'quatre-vingts-dix'
+		    console.log(decade);
+		    break;
+		  default:
+		    decade = 'cent ?';
+		    console.log(decade);
+		    break;
+		}	
+
+		switch (unity) {
+		  case 1:
+		    unity = 'un'
+		    console.log(decade + ' et ' + unity);
+		    break;
+		 case 2:
+		    unity = 'deux'
+		    console.log(decade + ' et ' + unity);
+		    break;
+		 case 3:
+		    unity = 'trois'
+		    console.log(decade + ' et ' + unity);
+		    break;
+		 case 4:
+		    unity = 'quatre'
+		    console.log(decade + ' et ' + unity);
+		    break;
+		 case 5:
+		    unity = 'cinq'
+		     console.log(decade + ' et ' + unity);
+		    break;
+		 case 6:
+		    unity = 'six'
+		    console.log(decade + ' et ' + unity);
+		    break;
+		 case 7:
+		    unity = 'sept'
+		   console.log(decade + ' et ' + unity);
+		    break;
+		 case 8:
+		    unity = 'huit'
+		     console.log(decade + ' et ' + unity);
+		    break;
+		 case 9:
+		    unity = 'neuf'
+		 	console.log(decade + ' et ' + unity);
+		    break;
+		  default:
+		    unity = 'zero';
+		    console.log(decade + ' et ' + unity);
+		    break;
+		}
+
+	}
+
+	if(number > 999 || number < 0){
+		var number = parseInt(prompt('entrer un chiffre ENTRE 0 ET 999!'));
+	} if(number < 999 && number > 0) {
+
+			unity = number % 10;
+			decade = number % 100 - unity;
+			hundred = number % 1000 - decade -unity;
+			convert(hundred, decade, unity);	
+	}
+
+
+</script>
+</html>
