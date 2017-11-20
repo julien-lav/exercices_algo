@@ -15,6 +15,48 @@
 
 	function convert(hundred, decade, unity) {
 		console.log(hundred + ' ' + decade + ' ' + unity);
+			switch (hundred) {
+		 case 100:
+		    hundred = 'cent'
+		    console.log(hundred);
+		    break;
+		 case 200:
+		    hundred = 'deux-cents'
+		    console.log(hundred);
+		    break;
+		 case 300:
+		    hundred = 'trois-cents'
+		    console.log(hundred);
+		    break;
+		 case 400:
+		    hundred = 'quatres-cents'
+		    console.log(hundred);
+		    break;
+		 case 500:
+		    hundred = 'cinq-cents'
+		    console.log(hundred);
+		    break;
+		 case 600:
+		    hundred = 'six-cents'
+		    console.log(hundred);
+		    break;
+		 case 700:
+		    hundred = 'sept-cent'
+		    console.log(hundred);
+		    break;
+		 case 800:
+		    hundred = 'huit-cents'
+		    console.log(hundred);
+		    break;
+		 case 900:
+		    hundred = 'neuf-cents'
+		    console.log(hundred);
+		    break;
+		  default:
+		    hundred = ''
+		    console.log(hundred);
+		    break;
+		}	
 
 		switch (decade) {
 		 case 10:
@@ -54,7 +96,7 @@
 		    console.log(decade);
 		    break;
 		  default:
-		    decade = 'cent ?';
+		    decade = '';
 		    console.log(decade);
 		    break;
 		}	
@@ -62,51 +104,51 @@
 		switch (unity) {
 		  case 1:
 		    unity = 'un'
-		    console.log(decade + ' et ' + unity);
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 2:
 		    unity = 'deux'
-		    console.log(decade + ' et ' + unity);
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 3:
 		    unity = 'trois'
-		    console.log(decade + ' et ' + unity);
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 4:
 		    unity = 'quatre'
-		    console.log(decade + ' et ' + unity);
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 5:
 		    unity = 'cinq'
-		     console.log(decade + ' et ' + unity);
+		     console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 6:
 		    unity = 'six'
-		    console.log(decade + ' et ' + unity);
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 7:
 		    unity = 'sept'
-		   console.log(decade + ' et ' + unity);
+		   console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 8:
 		    unity = 'huit'
-		     console.log(decade + ' et ' + unity);
+		     console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		 case 9:
 		    unity = 'neuf'
-		 	console.log(decade + ' et ' + unity);
+		 	console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		  default:
-		    unity = 'zero';
-		    console.log(decade + ' et ' + unity);
+		    unity = '';
+		    console.log(hundred + ' ' + decade + ' et ' + unity);
 		    break;
 		}
 
 	}
 
-	if(number > 999 || number < 0){
-		var number = parseInt(prompt('entrer un chiffre ENTRE 0 ET 999!'));
-	} if(number < 999 && number > 0) {
+	while(number >= 1000 || number < 0){
+		var number = parseInt(prompt('entrer un chiffre ENTRE 1 ET 999!'));
+	} if(number <= 1000 && number > 0) {
 
 			unity = number % 10;
 			decade = number % 100 - unity;
