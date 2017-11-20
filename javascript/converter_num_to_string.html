@@ -13,8 +13,8 @@
 
 	console.log(number);
 
-	function convert(hundred, decade, unity) {
-		console.log(hundred + ' ' + decade + ' ' + unity);
+	function convert(hundred, decade, units) {
+		console.log(hundred + ' ' + decade + ' ' + units);
 			switch (hundred) {
 		 case 100:
 		    hundred = 'cent'
@@ -101,46 +101,46 @@
 		    break;
 		}	
 
-		switch (unity) {
+		switch (units) {
 		  case 1:
-		    unity = 'un'
-		    console.log(hundred + ' ' + decade + ' et ' + unity);
+		    units = 'un'
+		    console.log(hundred + ' ' + decade + ' et ' + units);
 		    break;
 		 case 2:
-		    unity = 'deux'
-		    console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'deux'
+		    console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 3:
-		    unity = 'trois'
-		    console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'trois'
+		    console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 4:
-		    unity = 'quatre'
-		    console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'quatre'
+		    console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 5:
-		    unity = 'cinq'
-		     console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'cinq'
+		     console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 6:
-		    unity = 'six'
-		    console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'six'
+		    console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 7:
-		    unity = 'sept'
-		   console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'sept'
+		   console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 8:
-		    unity = 'huit'
-		     console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'huit'
+		     console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		 case 9:
-		    unity = 'neuf'
-		 	console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = 'neuf'
+		 	console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		  default:
-		    unity = '';
-		    console.log(hundred + ' ' + decade + ' ' + unity);
+		    units = '';
+		    console.log(hundred + ' ' + decade + ' ' + units);
 		    break;
 		}
 
@@ -150,10 +150,10 @@
 		var number = parseInt(prompt('entrer un chiffre ENTRE 1 ET 999!'));
 	} if(number <= 1000 && number > 0) {
 
-			unity = number % 10;
-			decade = number % 100 - unity;
-			hundred = number % 1000 - decade -unity;
-			convert(hundred, decade, unity);	
+			units = number % 10;
+			decade = number % 100 - units;
+			hundred = number % 1000 - decade -units;
+			convert(hundred, decade, units);	
 	}
 
 
