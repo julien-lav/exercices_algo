@@ -17,12 +17,12 @@ function randomize (){
 	var random = Math.floor(Math.random()*4);
 	return ligth(random);
 }
-function ligth(test){
+function ligth(random){
 
-	tab_board[test].classList.add('circle-ligth');
+	tab_board[random].classList.add('circle-ligth');
 	// console.log(tab_board[test]);
 
-	current_board.push(tab_board[test]);
+	current_board.push(tab_board[random]);
 
 	// console.log(current_board);
 }
