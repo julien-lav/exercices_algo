@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exercice </title>
+</head>
+<body>
+	
+</body>
+	<script>
+		
+		var tab = [];
+		var elements; 
+
+		while (!isNaN(elements = prompt("Entrer un chiffre (Q to quit)")))
+		{
+			tab.push(parseInt(elements));
+		}
+
+		//-->
+		console.log(tab)
+
+		function my_max(table)
+		{
+			console.log(Math.max.apply(null, table));
+		}
+		//-->
+		my_max(tab)
+	</script>
+</html>
+

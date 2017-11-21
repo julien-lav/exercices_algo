@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exercice </title>
+</head>
+<body>
+	
+</body>
+	<script>
+
+		var my_word;
+		my_word = prompt("Entrer un mot !");
+		var vowel = ['a', 'e', 'i', 'o', 'u', 'y'];
+		var count = 0;
+		//-->
+		//console.log(my_word); 
+		
+		function vowel_count(word)
+		{
+			for(var i = 0; i < word.length; i++)
+			{
+				for(var j = 0; j < vowel.length-1; j++)
+				{
+					if(word[i] == vowel[j]){
+						count = count +1;
+						console.log(count);
+						console.log(word[i]);
+					}
+				}
+			}
+
+		}
+		//-->
+		vowel_count(my_word)
+
+	</script>
+</html>
+
