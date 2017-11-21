@@ -126,7 +126,7 @@
 
 	}
 
-	while(number >= 1000 || number < 0){
+	while(number >= 1000 || number < 0 || isNaN(number)){
 		var number = parseInt(prompt('entrer un chiffre ENTRE 1 ET 999!'));
 	} if(number <= 1000 && number > 0) {
 
