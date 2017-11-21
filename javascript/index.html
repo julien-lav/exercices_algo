@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exercice </title>
+</head>
+<body>
+	
+</body>
+	<script>
+
+		var my_string;
+		my_string = prompt("Entrer un mot !");
+		my_reversed_array = ['']
+		 
+		console.log(my_string);
+		
+		function reverse(string)
+		{
+			for(var i = string.length-1; i > 0; i--)
+			{
+				my_reversed_array.push(string[i]);
+			}
+			 var my_reversed_string = my_reversed_array.toString();
+			 console.log(my_reversed_string);
+			 console.log(my_reversed_string.replace(/,/g, ""));
+
+			 //var drow = my_reversed_string.toString();
+			 //console.log(drow);
+		}
+		//-->
+		reverse(my_string)
+
+	</script>
+</html>
+

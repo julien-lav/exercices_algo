@@ -1,0 +1,52 @@
+
+.board {
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+}
+div {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+#circle-red { 
+	background-color: #E85965;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+#circle-green { 
+	background-color: #8EFF70;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+#circle-yellow { 
+	background-color: #FFED45;
+		border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+#circle-blue { 
+	background-color: #5F8FFF;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+#circle-red:hover { 
+	background-color: #FF1605;
+	cursor: pointer;
+}
+#circle-green:hover { 
+	background-color: #46E812;
+	cursor: pointer;
+}
+#circle-yellow:hover { 
+	background-color: #FFC612;
+	cursor: pointer;
+}
+#circle-blue:hover { 
+	background-color: #2725FF;
+	cursor: pointer;
+}
+.circle-ligth { 
+	opacity: 0.5;
+}
+
+	
