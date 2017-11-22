@@ -10,9 +10,7 @@ var current_board = [];
 var played_board = [];
 var count_turn = 0;
 
-
 function player_round(){
-	//while(played_board.length < current_board.length){
 	$one.onclick = function() { 
 		played_board.push(this);
 		check_game_status(); };
@@ -25,33 +23,27 @@ function player_round(){
 	$four.onclick = function() { 
 		played_board.push(this);
 		check_game_status(); };
-// Il faut que je factorise le haut dans l'ideal 
+// A factoriser
 }
 function check_game_status(){
 	if(played_board.length < current_board.length) // 
 	{
-		alert('player_round');
-		//console.log('player_round');
 		player_round(); 
-		console.log(current_board.length);
-		console.log(played_board.length);
 	}
 	else if(played_board.length === current_board.length) {
-		for(i=0;i<current_board.length;i++){
-			for(j=0;j<played_board.length;j++){
+		for(i=0; i < current_board.length; i++){
+			for(j=0; j < played_board.length; j++){
 			    if(played_board[j]===current_board[i]){
-		       		//alert('start_game');
-					//console.log('start_game');
-					//console.log(played_board);
-					//console.log(played_board.length);
-					console.log(current_board.length);
-
+		       		
+			    	console.log(played_board[j]);
 					played_board = []; //-> while(played_board.length){played_board.pop();}
 					console.log(played_board.length);
 					start_game();
-	      		}else if(played_board[j]!=current_board[i]){	
+	      		}else if(played_board[j] !== current_board[i]){	
+	      		
+
 					alert('GAME OVER !');
-					current_board = []; //-> On recommence
+					
 				}
 	    	} 
 		}
@@ -70,16 +62,16 @@ function computer_round(random){
 
 		for(var i = 0; i<current_board.length; i++)
 		{
-			current_board[i].classList.toggle('circle-ligth');
-			//sleep(1000);
-			// console.log(count_turn);
+			//current_board[i].classList.add('circle-ligth');
+    		window.setTimeout(function() {
+			//current_board[i].classList.remove('circle-ligth'); 
+			}, 300);
 		}
-			tab_board[random].classList.toggle('circle-ligth');
-			//sleep(1000); 
 
 
-			//classList.remove('circle-ligth');
-		 //console.log(tab_board[random]);
+
+			
+		    // console.log(tab_board[random]);
 /****************/
 player_round()/**/
 /****************/
