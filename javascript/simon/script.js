@@ -34,8 +34,10 @@ function check_game_status(){
 		for(i=0; i < current_board.length; i++){
 			for(j=0; j < played_board.length; j++){
 			    if(played_board[j]===current_board[i]){
-		       		
-			    	console.log(played_board[j]);
+		       		console.log(played_board[j]);
+		       		console.log(current_board[i]);
+
+
 					played_board = []; //-> while(played_board.length){played_board.pop();}
 					console.log(played_board.length);
 					start_game();
@@ -43,7 +45,8 @@ function check_game_status(){
 	      		
 
 					alert('GAME OVER !');
-					
+					console.log(played_board[j]);
+		       		console.log(current_board[i]);
 				}
 	    	} 
 		}
@@ -63,15 +66,14 @@ function computer_round(random){
 		for(var i = 0; i<current_board.length; i++)
 		{
 			//current_board[i].classList.add('circle-ligth');
-    		window.setTimeout(function() {
-			//current_board[i].classList.remove('circle-ligth'); 
-			}, 300);
-		}
-
-
-
 			
-		    // console.log(tab_board[random]);
+			//current_board[i].classList.remove('circle-ligth'); 
+			// console.log(count_turn);
+		}
+			//tab_board[random].classList.add('circle-ligth');
+			
+			//tab_board[random].classList.remove('circle-ligth');
+		    //console.log(tab_board[random]);
 /****************/
 player_round()/**/
 /****************/
