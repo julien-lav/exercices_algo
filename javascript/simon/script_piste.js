@@ -36,6 +36,31 @@ function player_turn(){
 	}
 	alert("game over !");
 }
-
-
 player_turn();
+
+
+	$one.addEventListener('click', function() {
+		played_board.push(this);
+		check_game_status();
+		//console.log(played_board);
+	});
+
+
+
+$two.addEventListener('click', function() {
+		played_board.push(this);
+		check_game_status();
+		//console.log(played_board);
+	});
+
+	$three.addEventListener('click', function() {
+		played_board.push(this);
+		check_game_status();
+		//console.log(played_board);
+	});
+
+	$four.addEventListener('click', function() {
+		played_board.push(this);
+		check_game_status();
+		//console.log(played_board);
+	});
